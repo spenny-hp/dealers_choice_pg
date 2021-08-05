@@ -1019,31 +1019,31 @@ const syncAndSeed = async () => {
 
 const Book = conn.define("book", {
   author: {
-    type: STRING
+    type: STRING,
   },
   country: {
-    type: STRING
+    type: STRING,
   },
   imageLink: {
-    type: STRING
+    type: STRING,
   },
   language: {
-    type: STRING
+    type: STRING,
   },
   link: {
     type: STRING,
     validate: {
-        isURL: true
-      }
+      isURL: true,
+    },
   },
   pages: {
-    type: INTEGER
+    type: INTEGER,
   },
   title: {
-    type: STRING
+    type: STRING,
   },
   year: {
-    type: INTEGER
+    type: INTEGER,
   },
 });
 
