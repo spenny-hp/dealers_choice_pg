@@ -1,0 +1,23 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+span {
+  border: solid black 1px;
+  box-sizing: border-box;
+  height: 100px;
+  width: calc(100% / 3);
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: aliceblue;
+}
+
+h1 h2 h3 {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+}

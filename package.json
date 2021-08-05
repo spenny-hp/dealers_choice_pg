@@ -1,7 +1,6 @@
 {
   "name": "dealers_choice_pg",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,8 +19,13 @@
   "homepage": "https://github.com/spenny-hp/dealers_choice_pg#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.12",
+    "path": "^0.12.7",
     "pg": "^8.7.1",
     "sequelize": "^6.6.5"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

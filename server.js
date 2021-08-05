@@ -1,15 +1,17 @@
 const db = require("./db");
+const path = require("path");
+const logger = require("morgan");
 const express = require("express");
 const app = express();
-app.use(require("method-override")("_method"));
-app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res, next) => res.redirect("/books"));
-app.use("/books", require("./routes/books"));
+app.use(express.static(path.join(__dirname, "./public")));
+app.use(logger("dev"));
+
+app.use(require("./routes/books"));
 
 const init = async () => {
   await db.syncAndSeed();
-  const port = process.env.PORT || 1731;
+  const port = process.env.PORT || 3000;
   app.listen(port, () => console.log(`listening on port ${port}`));
 };
 
